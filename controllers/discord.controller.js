@@ -1,6 +1,8 @@
 async function base(req, res) {
     try {
-        return res.status(200).json({ message: 'You are at base discord controller!' })
+        const { query } = req
+        console.log(query)
+        return res.status(200).json({ query })
     } catch (error) {
         return res.status(500).json({ status: 'error', message: error.message })
     }
