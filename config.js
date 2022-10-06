@@ -15,6 +15,7 @@ export default {
         client_id: process.env.DISCORD_CLIENT_ID,
         client_secret: process.env.DISCORD_CLIENT_SECRET,
         tokenURL: process.env.DISCORD_TOKEN_URL,
-        tokenRevokeURL: process.env.DISCORD_TOKEN_REVOCATION_URL
+        tokenRevokeURL: process.env.DISCORD_TOKEN_REVOCATION_URL,
+        redirect_uri: process.env.DISCORD_REDIRECT_URI,
     }
 }
