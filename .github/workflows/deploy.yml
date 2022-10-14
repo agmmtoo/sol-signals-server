@@ -24,7 +24,7 @@ jobs:
           username: ${{ secrets.USERNAME }}
           key: ${{ secrets.KEY }}
           source: "."
-          target: "/home/appwrite/sol-signals-server/"
+          target: "/home/ammo/sol-signals-server/"
 
       # run commands on remote via ssh
       - name: Deploy using ssh
@@ -35,6 +35,6 @@ jobs:
           key: ${{ secrets.KEY }}
           # port: 22
           script: |
-            cd /home/appwrite/sol-signals-server/
+            cd /home/ammo/sol-signals-server/
             yarn install --prod
           # pm2 restart selfbot
