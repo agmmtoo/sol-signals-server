@@ -27,7 +27,7 @@ app.use(compression())
 app.use('/auth/discord', discordRouter)
 
 // static files
-app.use(express.static(path.join(config.basedir, 'public')))
+// app.use(express.static(path.join(config.basedir, 'public')))
 
 // fallback route
 app.use('*', (req, res) => {
