@@ -1,7 +1,7 @@
 import { createServer } from 'http'
 
 import config from './config.js'
-const { port: PORT } = config
+const { port } = config
 
 import app from './express.js'
 
@@ -9,8 +9,8 @@ import app from './express.js'
 const server = createServer(app)
 
 // start server
-server.listen(PORT)
+server.listen(port)
 
 server.on('listening', () => {
-    console.log(`Server listening on port ${PORT}`)
+    console.log(`Server listening on port ${port}`)
 })
